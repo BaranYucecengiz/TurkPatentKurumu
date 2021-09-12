@@ -28,7 +28,7 @@ while True:
     colors = np.array(colors)
 
     ##degistirilmesi gereken dosyalar
-    model = cv2.dnn.readNetFromDarknet(r"C:\Users\husey\Desktop\Teknofest\YOLO\Trained_Model\rov_yolov4.cfg",r"C:\Users\husey\Desktop\Teknofest\YOLO\Trained_Model\rov_yolov4_last.weights")
+    model = cv2.dnn.readNetFromDarknet(r"C:\Users\byuce\Desktop\Teknofest\YOLO\Trained_Model\rov_yolov4.cfg",r"C:\Users\byuce\Desktop\Teknofest\YOLO\Trained_Model\rov_yolov4_last.weights")
     layers = model.getLayerNames()
     
     output_layer = [layers[layer[0]-1] for layer in model.getUnconnectedOutLayers()]
